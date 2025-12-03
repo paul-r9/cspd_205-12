@@ -37,4 +37,11 @@ public class GildedRose_100PerCentCoverageTest {
         assertEquals(0, sut.items[0].quality, "backstage passes are worthless after the concert date");
     }
 
+    @Test
+    void BackstagePass_NearConcertDate_QualityIncreasesFaster() {
+        GildedRose sut = new GildedRose(createItemArray(BACKSTAGE_PASS, 5, 20));
+        sut.updateQuality();
+        assertEquals(23, sut.items[0].quality);
+    }
+
 }
