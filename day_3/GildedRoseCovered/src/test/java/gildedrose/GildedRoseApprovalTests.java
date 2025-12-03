@@ -1,4 +1,5 @@
-package gildedrose;
+package gildedrose
+;
 
 import org.approvaltests.combinations.CombinationApprovals;
 import org.junit.jupiter.api.Test;
@@ -12,8 +13,8 @@ class GildedRoseApprovalTests {
         CombinationApprovals.verifyAllCombinations(
                 this::doUpdateQuality,
                 new String[] {"foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros"},
-                new Integer[] { 0 },  // SellIn
-                new Integer[] { 10 }  // Quality
+                new Integer[] { -1, 0, 1, 5, 6, 9, 10, 11, 50 },  // SellIn
+                new Integer[] { 0, 1, 2, 3, 4, 5,  10, 49, 50 }  // Quality
         );
     }
 

@@ -15,3 +15,4 @@ Feature: Gilded Rose conjured item
     When I update the quality
     Then I should get item with Quality of 6
 
+# Ensure sellin decreases
