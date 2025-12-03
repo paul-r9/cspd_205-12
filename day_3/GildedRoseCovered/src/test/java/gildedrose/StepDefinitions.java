@@ -21,7 +21,7 @@ public class StepDefinitions {
         items[0].sellIn = sellin;
     }
 
-    @Given("the item has Quality of {int}")
+    @Given("The item has Quality of {int}")
     public void the_item_has_quality_of(Integer quality) {
         items[0].quality = quality;
     }
